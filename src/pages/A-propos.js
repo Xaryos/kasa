@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from '../components/Header';
 
-const Home = () => {
+const Apropos = () => {
     return (
         <div>
             <Header/>
-            Home 
+            a propos
         </div>
     );
 };
 
-export default Home;
+export default Apropos;

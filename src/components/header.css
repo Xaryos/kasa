@@ -1,0 +1,33 @@
+* {
+    text-decoration: none;
+    color: rgba(255, 96, 96, 1);
+    box-sizing: border-box;
+}
+
+header {
+    height: auto;
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headLogo {
+    width: 30%;
+}
+.SpaceLogo{
+    padding: 0 1% 0 1%;
+}
+
+nav {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.itemLink:hover {
+    text-decoration: underline;
+    color:rgba(255, 96, 96, 1);
+}

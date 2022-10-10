@@ -11,11 +11,11 @@ const Footer = () => {
         <div>
             <footer>
                 <div className="footLogo">
-                    <img className="K" src={Klogo} alt="K"></img>
-                    <img className="House" src={Hlogo} alt="House"></img>
-                    <img className="Door" src={Dlogo} alt="Door"></img>
-                    <img className="S" src={Slogo} alt="S"></img>
-                    <img className="A" src={Alogo} alt="A"></img>
+                    <img className="FK" src={Klogo} alt="K"></img>
+                    <img className="FHouse" src={Hlogo} alt="House"></img>
+                    <img className="FDoor" src={Dlogo} alt="Door"></img>
+                    <img className="FS" src={Slogo} alt="S"></img>
+                    <img className="FA" src={Alogo} alt="A"></img>
                 </div>
                 <h2>© 2020 Kasa. All rights reserved</h2>
             </footer>

@@ -5,7 +5,7 @@ const Thumb = ({detail}) => {
     
     return (
         <div className='Thumb'>
-            <img src="" alt=""></img>
+            <img className='imageCover 'src= {detail.cover} alt= {detail.title}></img>
             <h3 className='colorTitle '>{detail.title}</h3>
         </div>
     );

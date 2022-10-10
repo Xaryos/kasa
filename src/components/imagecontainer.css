@@ -1,15 +1,21 @@
+.bigbox {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
 .mainImage {
-     background-color: rgba(0, 0, 0, 1);
-     background-image: url(../images/Main/IMGforest.png);
-     background-repeat: no-repeat;
-     background-size: cover;
-     margin: 2%;
-     height: 223px;
-     border-radius: 25px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     filter: brightness(50%);   
+    background-color: rgba(0, 0, 0, 1);
+    background-image: url(../images/Main/IMGforest.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2%;
+    height: 223px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: brightness(80%);
+    position: relative;
 }
 
 .TitleText {
@@ -19,6 +25,36 @@
     position: absolute;
     left: 25.9%;
     right: 25.14%;
-    top: 24.32%;
+    top: 21.32%;
     bottom: 69.04%;
+    margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+
+    .bigbox {
+        margin-top: 10%;
+        position: relative;
+    }
+
+    .mainImage {
+        width: 335px;
+        height: 111px;
+        margin: 0 auto;
+        background: url(../images/Main/IMG.png);
+    }   
+
+    .TitleText {
+        font-size: 24px;
+        width: 217px;
+        height: 48px;
+        text-align: start;
+
+        position: absolute;
+        left: 9.6%;
+        right: 32.53%;
+        top: 14.04%;
+        bottom: 80.05%;
+        line-height: 100%;
+    }
 }

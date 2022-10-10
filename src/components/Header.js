@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 // Logo images
 import Klogo from '@/images/logo/VectorK.png';
 import Hlogo from '@/images/logo/VectorHOUSE.png';
+import Dlogo from '@/images/logo/VectorDOOR.png';
 import Slogo from '@/images/logo/VectorS.png';
 import Alogo from '@/images/logo/VectorA.png';
 
@@ -16,18 +17,19 @@ const Header = () => {
             <header>
                 {/* Logo */}
                 <div className="headLogo">
-                    <img className="SpaceLogo" src={Klogo} alt="K"></img>
-                    <img className="SpaceLogo" src={Hlogo} alt="House"></img>
-                    <img className="SpaceLogo" src={Slogo} alt="S"></img>
-                    <img className="SpaceLogo" src={Alogo} alt="A"></img>
+                    <img className="K" src={Klogo} alt="K"></img>
+                    <img className="House" src={Hlogo} alt="House"></img>
+                    <img className="Door" src={Dlogo} alt="Door"></img>
+                    <img className="S" src={Slogo} alt="S"></img>
+                    <img className="A" src={Alogo} alt="A"></img>
                 </div>
                 {/* Nav */}
                 <nav>
                     <div className="itemLink">
-                    <Link to="/home">Accueil</Link>
+                        <Link to="/home">Accueil</Link>
                     </div>
                     <div className="itemLink">
-                    <Link to="/apropos">A Propos</Link>
+                        <Link to="/apropos">A Propos</Link>
                     </div>
                 </nav>
             </header>

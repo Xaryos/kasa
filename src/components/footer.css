@@ -1,0 +1,27 @@
+footer {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1%;
+    position: relative;
+}
+
+.footLogo {
+    width: auto;
+    margin: 2% 0 1% 0;
+}
+
+h2 {
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.Door {
+
+    position: absolute;
+    left: 49.89%;
+    top: 38.5%;
+}

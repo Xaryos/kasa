@@ -1,0 +1,14 @@
+.bodyHTML{
+    margin: 2%;
+}
+
+.Gallery {
+    background-color: #F7F7F7;
+    margin: 3% 2%  2% 2%;
+    height: auto;
+    border-radius: 25px;
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

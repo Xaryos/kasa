@@ -6,21 +6,21 @@
 
 header {
     height: auto;
-    margin: 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 5%;
 }
 
 .headLogo {
-    width: 30%;
+    width: 18%;
 }
 .SpaceLogo{
     padding: 0 1% 0 1%;
 }
 
 nav {
-    width: 30%;
+    width: 20%;
     display: flex;
     justify-content: space-around;
     font-size: 24px;

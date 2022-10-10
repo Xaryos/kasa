@@ -24,10 +24,10 @@ const Header = () => {
                 {/* Nav */}
                 <nav>
                     <div className="itemLink">
-                    <Link to="/Home">Accueil</Link>
+                    <Link to="/home">Accueil</Link>
                     </div>
                     <div className="itemLink">
-                    <Link to="/Apropos">A Propos</Link>
+                    <Link to="/apropos">A Propos</Link>
                     </div>
                 </nav>
             </header>

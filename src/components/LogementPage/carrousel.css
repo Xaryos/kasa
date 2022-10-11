@@ -1,0 +1,53 @@
+.MainBlock {
+    max-width: 1240px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+
+    margin-bottom: 5%;
+}
+
+.rollingBlock {
+    max-width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+
+    background: url(../../images/Main/BackgroundRolling.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.leftArrow {
+    background-image: url(../../images/Logement/VectorLeftArrow.png);
+    background-repeat: no-repeat;
+    width: 46.68px;
+    height: 79.2px;
+
+    cursor: pointer;
+}
+
+.rightArrow {
+
+    background-image: url(../../images/Logement/VectorRightArrow.png);
+    background-repeat: no-repeat;
+    width: 46.68px;
+    height: 79.2px;
+
+    cursor: pointer;
+}
+
+.rollingNumber {
+    color: white;
+
+    position: absolute;
+    left: 48.95%;
+    right: 49.11%;
+    top: 86.19%;
+    bottom: 6.01%;
+
+}

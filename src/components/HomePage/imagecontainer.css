@@ -5,7 +5,7 @@
 
 .mainImage {
     background-color: rgba(0, 0, 0, 1);
-    background-image: url(../images/Main/IMGforest.png);
+    background-image: url(../../images/Main/IMGforest.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 2%;
@@ -41,7 +41,7 @@
         width: 335px;
         height: 111px;
         margin: 0 auto;
-        background: url(../images/Main/IMG.png);
+        background: url(../../images/Main/IMG.png);
     }   
 
     .TitleText {

@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import "./home.css"
 import Header from '../components/Header';
-import ImageContainer from '../components/ImageContainer';
-import Thumb from '../components/Thumb';
+import ImageContainer from '../components/HomePage/ImageContainer';
+import Thumb from '../components/HomePage/Thumb';
 
 import { dataService } from '@/_services/data.service.js'
 import Footer from '../components/Footer';

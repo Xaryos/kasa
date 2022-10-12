@@ -1,6 +1,6 @@
 import React from 'react';
 import './carrousel.css'
-const Carrousel = ({ detail }) => {
+const Carrousel = () => {
     return (
         <div className='MainBlock'>
             <div className='rollingBlock'>

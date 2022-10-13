@@ -5,8 +5,10 @@ const getAllApparts = () => {
     return Apparts
 }
 
-const getOneAppart = async (id) => {
-    return await Apparts.filter(log => log.id === id)
+const getOneAppart = (id) => {
+    console.log(Apparts.find(log => log.id === id))
+    return Apparts.find(log => log.id === id)
+    
 }
 
 export const dataService = {

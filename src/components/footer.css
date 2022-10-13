@@ -2,7 +2,6 @@ footer {
     background-color: black;
     display: flex;
     flex-direction: column;
-    max-width: 1440px;
     height: 209px;
     margin: 0 auto;
     position: relative;

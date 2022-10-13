@@ -8,7 +8,10 @@ const Thumb = ({ detail }) => {
         <div className='Thumb'>
             <Link to={`/logement/${detail.id}`}>
                 <img className='imageCover ' src={detail.cover} alt={detail.title}></img>
-                <h3 className='colorTitle '>{detail.title}</h3>
+                <span>
+                    <h3 className='colorTitle '>{detail.title}</h3>
+                </span>
+
             </Link>
         </div>
     );

@@ -3,45 +3,35 @@
     height: 340px;
     border-radius: 10px;
     margin-bottom: 3%;
+    overflow: hidden;
 
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
     border-radius: 10px;
     position: relative;
     cursor: pointer;
 }
 
 .imageCover {
-    width: 340px;
-    height: 340px;
     border-radius: 10px;
-}
-
-.imageCover::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    height: 80px;
+    object-fit: cover;
+    height: 100%;
     width: 100%;
-    background: -webkit-linear-gradient(bottom, #F5F5F5, rgba(255, 255, 255, 0));
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
-
 .colorTitle {
     color: white;
     font-weight: 500;
     font-size: 18px;
+}
+
+span {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     position: absolute;
-    left: 5.88%;
-    right: 5.88%;
-    top: 78.82%;
-    bottom: 5.88%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 @media (max-width: 480px) {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import { dataService } from '@/_services/data.service.js'
 
@@ -14,25 +14,17 @@ import Scrollbox from '../components/LogementPage/Scrollbox';
 
 const Logement = () => {
     let { id } = useParams()
-    console.log(id);
-    const [logs, setLogs] = useState([])
-
-    useEffect(() => {
-        setLogs(dataService.getOneAppart({}))
-        console.log(logs);
-
-        return
-    }, [])
-
-
+    const appart = dataService.getOneAppart(id)
+    console.log(appart)
 
     return (
         <div className='bodyHtml'>
             <Header />
             <div className='MainContainer'>
-                <Carrousel />
+                
+                <Carrousel images={appart.pictures}/>
 
-                <Information />
+                <Information details={appart}/>
 
                 <div className='underContainer'>
                     <Scrollbox />

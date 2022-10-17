@@ -1,0 +1,66 @@
+.dd-Header {
+    background-color: rgba(255, 96, 96, 1);
+    width: 582px;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 0 2% 0 2%;
+}
+
+.uparrow {
+    background-image: url(../../images/Logement/Vectoruparrow.png);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 26.4px;
+    cursor: pointer;
+}
+
+
+.downarrow {
+    background-image: url(../../images/Logement/downarrow.png);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 26.4px;
+    cursor: pointer;
+    display: none;
+}
+
+.dd-content {
+    width: 582px;
+    height: 249px;
+    background-color: rgba(246,246,246,1);
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.content {
+    text-align: left;
+    list-style: none;
+    padding: 2%;
+}
+
+@media (max-width: 480px) {
+    .dd-Container {
+        margin-bottom: 5%;
+    }
+    .dd-Header {
+        width: 335px;
+        height: 29.93px;
+        border-radius: 5px;
+    }
+
+    .dd-content {
+        width: 335px;
+        height: 143.32px;
+        border-radius: 5px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+}

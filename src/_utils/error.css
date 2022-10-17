@@ -1,0 +1,54 @@
+.mainErrContainer {
+    margin: 0 auto;
+}
+
+.errorContainer {
+    margin-top: 1%;
+    height: 900px;
+}
+
+.Title {
+    width: 597px;
+    height: 263px;
+    font-weight: 700;
+    font-size: 288px;
+    margin: 0 auto;
+}
+
+.SubTitle {
+    margin-top: 10%;
+    color: rgba(255, 96, 96, 1);
+}
+
+.linkText {
+    margin-top: 10%;
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .mainContainer {
+        max-width: 375px;
+        height: 812px;
+    }
+
+    .errorContainer {
+        margin-top: 50%;
+        height: 500px;
+    }
+    
+    .Title {
+        width: 198px;
+        height: 99px;
+        font-size: 96px;
+    }
+
+    .SubTitle{
+        font-size: 18px;
+        width: 50%;
+        margin: 10% auto;
+    }
+
+    .linkText {
+        margin-top: 50%;
+    }
+}

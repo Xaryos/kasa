@@ -7,7 +7,8 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Carrousel from '../components/LogementPage/Carrousel';
 import Information from '../components/LogementPage/Information';
-import Scrollbox from '../components/LogementPage/Scrollbox';
+import Dropdown from '../components/LogementPage/Dropdown';
+import Equipement from '../components/LogementPage/Equipement';
 
 
 
@@ -15,20 +16,20 @@ import Scrollbox from '../components/LogementPage/Scrollbox';
 const Logement = () => {
     let { id } = useParams()
     const appart = dataService.getOneAppart(id)
-    console.log(appart)
 
     return (
         <div className='bodyHtml'>
             <Header />
             <div className='MainContainer'>
                 
-                <Carrousel images={appart.pictures}/>
+                <Carrousel key={appart.pictures} images={appart.pictures}/>
 
-                <Information details={appart}/>
+                <Information key={appart.information} details={appart}/>
 
                 <div className='underContainer'>
-                    <Scrollbox />
-                    <Scrollbox />
+                    <Dropdown  key={appart.dropdown}descriptions={appart}/>
+                    <Equipement  key={appart.equiment} details={appart}/>
+                    
                 </div>
 
             </div>

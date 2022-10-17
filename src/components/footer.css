@@ -12,31 +12,7 @@ footer {
     margin: 2% 0 1% 0;
 }
 
-.FK {
-    width: 31.51px;
-    height: 36.11px;
-}
-.FHouse {
-    width: 26.71px;
-    height: 30.95px;
-}
-.FDoor {
-    width: 3.1px;
-    height: 9.14px;
 
-    position: absolute;
-    right: 50%;
-    bottom: 71%;
-    left: 49.8%
-}
-.FS {
-    width: 22.86px;
-    height: 27.84px;
-}
-.FA {
-    width: 23.72px;
-    height: 27.94px;
-}
 h2 {
     color: white;
     font-weight: 500;
@@ -46,18 +22,9 @@ h2 {
 @media (max-width: 480px){
     
     footer {
-        width: 375px;
+        width: auto;
         height: 209px;
         padding-top: 12%;
         margin: 0 auto;
-    }
-    .FDoor {
-        width: 3.1px;
-        height: 9.14px;
-    
-        position: absolute;
-        right: 50%;
-        bottom: 121px;
-        left: 49.4%
     }
 }

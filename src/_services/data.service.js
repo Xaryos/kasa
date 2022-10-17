@@ -6,7 +6,6 @@ const getAllApparts = () => {
 }
 
 const getOneAppart = (id) => {
-    console.log(Apparts.find(log => log.id === id))
     return Apparts.find(log => log.id === id)
     
 }

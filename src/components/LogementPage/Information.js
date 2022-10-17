@@ -2,20 +2,37 @@ import React from 'react';
 import "./information.css";
 
 import EmptyStar from '@/images/Logement/VectorEMPTY.png';
-import FullStar from '@/images/Logement/vectorFULL.png';
+import FullStar from '@/images/Logement/VectorFULL.png';
+
 
 const Information = ({ details }) => {
+
+    const ratings = details.rating;
+    console.log('nmb rate : ' +details.rating );
+
+    let rate = [];
+    for (let i = 1; i <= 5 ; i++) {
+        if (i <= ratings) {
+            rate[i] = true
+        } else {
+            rate[i] = false
+        }
+    }
+    console.log('rate array : ' + rate)
+
+
     return (
         <div className='headInfo'>
             <div className='leftInfo'>
                 <h1 className='title'>{details.title}</h1>
-                <p>{details.location}</p>
+                <p className='spaceabove'>{details.location}</p>
 
-                {
+                <div className='tagContainer'> {
                     details.tags.map(tag => (
                         <div className='tags'>{tag}</div>
                     ))
-                }
+                }</div>
+
 
 
 
@@ -24,27 +41,24 @@ const Information = ({ details }) => {
             <div className='rightInfo'>
 
                 <div className='bodyRight'>
-                    {console.log(details.host.name)}
-                    <h3>{details.host.name}</h3>
+                    <h3 className='sizeH3'>{details.host.name}</h3>
                     <div className='CircleImg'>
                         <img className='interiorpic' src={details.host.picture} alt="hostimg"></img></div>
                 </div>
-                <p className="stars">{details.rating}</p>
+                <ul className='StarContainer'>
+                    {
+                    rate.map(starRate => (
+                        <li className='stars'>
+                            <img src= {starRate ? FullStar : EmptyStar} alt={starRate ? 'Star full ' : 'Star empty'}></img>
+                        </li>
 
-                {/* {
-                
-                    details.rating.map(rate => (
+                        ))
+                }
+                </ul>
 
-                        for(let i=1; i <= 5; i++ ) {
-                            if(i <= star){
-                                rate[i] = true
-                            } else {
-                                rate[i] = false
-                            }
-                        }
 
-                    ))
-                } */}
+
+
 
                 {/* 
                         Rate de 3 

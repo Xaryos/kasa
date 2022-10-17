@@ -8,18 +8,17 @@
 .rollingBlock {
     max-width: 1240px;
     height: 415px;
-    
+
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
 .leftArrow {
     background-image: url(../../images/Logement/VectorLeftArrow.png);
     background-repeat: no-repeat;
-    background-color: black;
     width: 46.68px;
     height: 79.2px;
 
@@ -35,7 +34,6 @@
 
     background-image: url(../../images/Logement/VectorRightArrow.png);
     background-repeat: no-repeat;
-    background-color: black;
     width: 46.68px;
     height: 79.2px;
 
@@ -63,4 +61,40 @@
     height: 415px;
     object-fit: cover;
     border-radius: 25px;
+}
+
+
+
+@media (max-width: 480px) {
+
+    .rollingBlock {
+        width: 335px;
+        margin: auto;
+    }
+
+    .photo {
+        width: 335px;
+        border-radius: 10px;
+        object-fit: fill cover;
+    }
+
+    .leftArrow {
+        width: 11.67px;
+        height: 20px;
+        background-image: url(../../images/Logement/Vectorminileftarrow.png);
+        position: absolute;
+        right: 90%;
+        top: 50%;
+
+    }
+
+    .rightArrow {
+        width: 11.67px;
+        height: 20px;
+        background-image: url(../../images/Logement/Vectorminirightarrow.png);
+        position: absolute;
+        left: 90%;
+        top: 50%;
+    }
+
 }

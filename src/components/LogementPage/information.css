@@ -15,8 +15,20 @@ h1 {
     flex-direction: column;
     align-items: flex-start;
 }
+
 .title {
     margin: 0;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.spaceabove {
+    margin-top: 0;
+}
+
+.tagContainer {
+    display: flex;
+    gap: 2%;
 }
 
 .tags {
@@ -28,6 +40,7 @@ h1 {
     border-radius: 10px;
     background-color: rgba(255, 96, 96, 1);
     color: white;
+    font-size: 14px;
 }
 
 
@@ -35,12 +48,19 @@ h1 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 1%;
+    margin-top: 0.5%;
 }
+
 .bodyRight {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.sizeH3 {
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .CircleImg {
@@ -56,6 +76,63 @@ h1 {
     object-fit: cover;
     border-radius: 50%;
 }
+
+.StarContainer {
+    display: flex;
+    gap: 3%;
+    list-style: none;
+    padding: 0;
+}
+
 .stars {
     align-self: flex-end;
+}
+
+@media (max-width: 480px) {
+
+    .headInfo {
+        flex-direction: column;
+        margin-left: 7%;
+    }
+
+    .leftInfo {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .spaceabove {
+        font-size: 14px;
+    }
+
+    .tags {
+        border-radius: 5px;
+    }
+
+    .rightInfo {
+        flex-direction: row-reverse;
+    }
+    .bodyRight {
+        margin-left: 15%;
+    }
+
+    .sizeH3 {
+        font-size: 12px;
+        width: 93px;
+        height: 33px;
+    }
+    .CircleImg {
+        width: 32px;
+        height: 32px;
+    }
+    .interiorpic {
+        width: 32px;
+        height: 32px;
+        align-self: flex-end;
+    }
+    /* .stars {
+    } */
 }

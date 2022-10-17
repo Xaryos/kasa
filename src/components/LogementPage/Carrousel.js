@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './carrousel.css'
 const Carrousel = ({ images }) => {
-    console.log(images)
     const [position, setPosition] = useState(0)
 
     const next = () => {

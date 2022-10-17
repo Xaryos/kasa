@@ -1,4 +1,4 @@
-.scrollbox {
+.equipementbox {
     background-color: rgba(255, 96, 96, 1);
     width: 582px;
     height: 52px;
@@ -18,13 +18,35 @@
     height: 26.4px;
 }
 
-.underscrollbox {
+.underEquipementbox {
     width: 582px;
     height: 249px;
     background-color: rgba(246,246,246,1);
     border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
-.nospace {
-    margin: 0;
+.content {
+    text-align: left;
+    list-style: none;
+}
+
+
+
+@media (max-width: 480px) {
+    
+    .equipementbox {
+        width: 335px;
+        height: 29.93px;
+        border-radius: 5px;
+    }
+
+    .underEquipementbox {
+        width: 335px;
+        height: 143.32px;
+        border-radius: 5px;
+        margin: 0 auto;
+    }
 }

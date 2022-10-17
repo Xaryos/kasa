@@ -22,46 +22,6 @@ header {
     width: 18%;
 }
 
-/* Letter position */
-.K {
-    position: absolute;
-    left: 0%;
-    right: 95.62%;
-    top: 0%;
-    bottom: 8.45%;
-}
-
-.House {
-    position: absolute;
-    left: 4.86%;
-    right: 91.43%;
-    top: 21.53%;
-    bottom: 0%;
-}
-
-.Door {
-    position: absolute;
-    right: 92%;
-    top: 38px;
-
-}
-
-.S {
-    position: absolute;
-    left: 9.58%;
-    right: 87.24%;
-    top: 21.53%;
-    bottom: 7.89%;
-}
-
-.A {
-
-    position: absolute;
-    left: 13.66%;
-    right: 83.04%;
-    top: 21.25%;
-    bottom: 7.9%;
-}
 
 nav {
     width: 20%;
@@ -85,63 +45,10 @@ nav {
     .headLogo {
         width: 30%;
     }
-
-    .K {
-        position: absolute;
-        top:  0%;
-
-        width: 37.46px;
-        height: 43.03px;
-
+    .logoWidth {
+        width: 145px;
+        height: 47px;
     }
-
-    .House {
-        position: absolute;
-        left: 12.39%;
-        right: 78.13%;
-        top: 21.53%;
-        bottom: 0%;
-
-        width: 31.74px;
-        height: 36.88px;
-    }
-
-    .Door {
-
-        position: absolute;
-        left: 18.8%;
-        right: 80.06%;
-        top: 30px;
-        bottom: 8.17%;
-
-        width: 3.68px;
-        height: 10.89px;
-
-    }
-
-    .S {
-        position: absolute;
-        left: 24.45%;
-        right: 67.44%;
-        top: 21.53%;
-        bottom: 7.89%;
-
-        width: 27.17px;
-        height: 33.18px;
-    }
-
-    .A {
-
-        position: absolute;
-        left: 34.87%;
-        right: 56.72%;
-        top: 21.25%;
-        bottom: 7.9%;
-
-        width: 28.19px;
-        height: 33.3px;
-    }
-
     nav {
         width: 50%;
         font-size: 12px;

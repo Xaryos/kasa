@@ -1,3 +1,7 @@
+header{
+    margin-bottom: 2%;
+}
+
 .mainContainer {
     max-width: 1240px;
 }
@@ -8,4 +12,11 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 2%;
+}
+
+
+@media (max-width: 480px) {
+    .underContainer {
+        flex-direction: column;
+    }   
 }

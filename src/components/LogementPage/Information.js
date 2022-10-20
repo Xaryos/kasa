@@ -28,15 +28,10 @@ const Information = ({ details }) => {
                 <p className='spaceabove'>{details.location}</p>
 
                 <div className='tagContainer'> {
-                    details.tags.map(tag => (
-                        <div className='tags'>{tag}</div>
+                    details.tags.map((tag, i) => (
+                        <div className='tags' key={i}>{tag}</div>
                     ))
                 }</div>
-
-
-
-
-
             </div>
             <div className='rightInfo'>
 
@@ -47,42 +42,14 @@ const Information = ({ details }) => {
                 </div>
                 <ul className='StarContainer'>
                     {
-                    rate.map(starRate => (
-                        <li className='stars'>
+                    rate.map((starRate, i)  => (
+                        <li className='stars' key={i}>
                             <img src= {starRate ? FullStar : EmptyStar} alt={starRate ? 'Star full ' : 'Star empty'}></img>
                         </li>
 
                         ))
                 }
                 </ul>
-
-
-
-
-
-                {/* 
-                        Rate de 3 
-                            Map de rate 
-                            Fonder des variables pour full et empty star
-
-                            étape on regarde le nombre d'étoile (boucle)
-
-                            if ( i <= stars ) {
-                                rate[i] = true
-                            } else {
-                                rate[i] = false
-                            }
-                
-                            [1] = true // si 1 est <= 3
-                            [2] = true
-                            [3] = true
-                            [4] = false // donc à partir d'ici c'est faut
-                            [5] = false //
-                */}
-
-
-
-
             </div>
         </div>
     );

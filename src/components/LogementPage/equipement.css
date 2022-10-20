@@ -7,7 +7,6 @@
     align-items: center;
     color: white;
     border-radius: 10px;
-    margin: 0 auto;
     padding: 0 2% 0 2%;
 }
 
@@ -31,22 +30,57 @@
 .content {
     text-align: left;
     list-style: none;
+    margin: 0;
 }
 
+
+.dd_contentEquip_open {
+    height: auto;
+    width: 582px;
+    border-radius: 10px;
+    background-color: #F7F7F7;
+}
+
+.dd_contentEquip_close {
+    height: 0;
+    overflow: hidden;
+}
 
 
 @media (max-width: 480px) {
     
+    .globalEquipement {
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+
+    .responsiveSize {
+        font-size: 13px;
+    }
+
+    .imageResponsiveSizeLogement {
+        width: 25px;
+        height: 15px;
+    }
+
+    .responsiveSizeText {
+        font-size: 12px;
+    }
     .equipementbox {
         width: 335px;
         height: 29.93px;
         border-radius: 5px;
     }
 
-    .underEquipementbox {
+    .dd_contentEquip_open {
+        height: auto;
         width: 335px;
-        height: 143.32px;
-        border-radius: 5px;
-        margin: 0 auto;
+        border-radius: 10px;
+        background-color: #F7F7F7;
+    }
+    
+    .dd_contentEquip_close {
+        height: 0;
+        overflow: hidden;
     }
 }

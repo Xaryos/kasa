@@ -1,18 +1,25 @@
-import React from 'react';
+import React, { useState }  from 'react';
 import './dropdown.css';
 
-const Dropdown = ( {descriptions} ) => {
+import upArrow from '@/images/Logement/Vectoruparrow.png';
+import downArrow from '@/images/Logement/downarrow.png';
+
+const Dropdown = ({ descriptions }) => {
+    const [ isExpanded, setExpanded] = useState(false);
+
+    function toggle() {
+        setExpanded(!isExpanded);
+    }
+
     return (
         <div className='dd-Container'>
-            <div className='dd-Header'>
-                <h2> Description</h2>
-                <div className='uparrow'></div>
-                <div className='downarrow'></div>
-
+            <div className='dd-Header' onClick={toggle}>
+                <h2 className='responsiveSize'> Description</h2>
+                {isExpanded ? <img className='imageResponsiveSizeLogement' src={upArrow} alt='up'/> : <img className='imageResponsiveSizeLogement' src={downArrow} alt='down'/>}
             </div>
-            <div className='dd-content'>
-                <div className='content'>
-                <p>{descriptions.description}</p>
+            <div className={isExpanded ? 'dd_contentDd_open' : 'dd_contentDd_close'} >
+                <div className='content responsiveSizeText'>
+                    <p>{descriptions.description}</p>
                 </div>
             </div>
         </div>

@@ -1,0 +1,29 @@
+.mainBlock {
+    max-width: 1240px;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+
+
+.backgroundImage {
+    width: 1240px;
+    height: 223px;
+    
+    background-image: url('../../images/Apropos/AproposImage.png');
+    border-radius: 25px;
+    filter: brightness(70%);
+}
+
+@media (max-width: 480px) {
+
+    .mainBlock {
+        max-width: 370px;
+        margin: 0 auto;
+        margin-bottom: 2%;
+    }
+
+    .backgroundImage {
+        width: 370px;
+        height: 223px;
+    }
+}

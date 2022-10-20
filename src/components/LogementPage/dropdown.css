@@ -7,8 +7,19 @@
     align-items: center;
     color: white;
     border-radius: 10px;
-    margin: 0 auto;
     padding: 0 2% 0 2%;
+}
+
+.stateArrow {
+    width: 30px;
+    height: 26.4px;
+    cursor: pointer;
+
+    position: initial;
+    display: initial;
+    background: transparent;
+    color: white;
+
 }
 
 .uparrow {
@@ -32,7 +43,7 @@
 .dd-content {
     width: 582px;
     height: 249px;
-    background-color: rgba(246,246,246,1);
+    background-color: rgba(246, 246, 246, 1);
     border-radius: 10px;
     display: flex;
     align-items: flex-start;
@@ -45,14 +56,29 @@
     padding: 2%;
 }
 
+.dd_contentDd_open {
+    height: auto;
+    width: 582px;
+    border-radius: 10px;
+    background-color: #F7F7F7;
+}
+
+.dd_contentDd_close {
+    height: 0;
+    overflow: hidden;
+}
+
 @media (max-width: 480px) {
     .dd-Container {
+        margin: 0 auto;
         margin-bottom: 5%;
     }
+
     .dd-Header {
         width: 335px;
         height: 29.93px;
         border-radius: 5px;
+        margin: 0 auto;
     }
 
     .dd-content {
@@ -61,6 +87,18 @@
         border-radius: 5px;
         margin: 0 auto;
         padding: 0;
+    }
+
+    .dd_contentDd_open {
+        height: auto;
+        width: 335px;
+        border-radius: 10px;
+        background-color: #F7F7F7;
+    }
+    
+    .dd_contentDd_close {
+        height: 0;
+        overflow: hidden;
     }
 
 }

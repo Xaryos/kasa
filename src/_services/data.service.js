@@ -11,5 +11,5 @@ const getOneAppart = (id) => {
 }
 
 export const dataService = {
-    getAllApparts, getOneAppart
+    getAllApparts, getOneAppart, 
 }

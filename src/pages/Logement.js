@@ -6,36 +6,44 @@ import "./logement.css";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Carrousel from '../components/LogementPage/Carrousel';
-import Information from '../components/LogementPage/Information';
+import Information  from '../components/LogementPage/Information';
 import Dropdown from '../components/LogementPage/Dropdown';
 import Equipement from '../components/LogementPage/Equipement';
+
+import Error from '@/_utils/Error'
 
 
 
 
 const Logement = () => {
-    let { id } = useParams()
-    const appart = dataService.getOneAppart(id)
+    let { id } = useParams();
+    const appart = dataService.getOneAppart(id);
+    console.log(appart)
 
-    return (
-        <div className='bodyHtml'>
-            <Header />
-            <div className='MainContainer'>
-                
-                <Carrousel key={appart.pictures} images={appart.pictures}/>
+    if(!appart){
+        return <Error/>
+    }else{
 
-                <Information key={appart.information} details={appart}/>
-
-                <div className='underContainer'>
-                    <Dropdown  key={appart.dropdown}descriptions={appart}/>
-                    <Equipement  key={appart.equiment} details={appart}/>
+        return (
+            <div className='bodyHtml'>
+                <Header />
+                <div className='MainContainer'>
                     
-                </div>
+                    <Carrousel images={appart.pictures}/>
 
+                    <Information  details={appart}/>
+
+                    <div className='underContainer'>
+                        <Dropdown descriptions={appart}/>
+                        <Equipement details={appart}/>
+                        
+                    </div>
+
+                </div>
+                <Footer />
             </div>
-            <Footer />
-        </div>
-    );
+        );
+    }
 };
 
 export default Logement;

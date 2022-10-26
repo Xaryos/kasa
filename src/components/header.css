@@ -29,6 +29,7 @@ nav {
     justify-content: space-around;
     font-size: 24px;
     font-weight: 500;
+    gap: 2%;
 }
 
 .itemLink:hover {
@@ -36,22 +37,43 @@ nav {
     color: rgba(255, 96, 96, 1);
 }
 
-@media (max-width: 480px) {
+/* low Screen Responsive */
+@media screen and (max-width: 1480px) {
+    nav {
+        width: 30%;
+    }
+}
+
+/* Tablet Responsive */
+@media screen and (max-width: 810px) {
+    header {
+        width: auto;
+        margin: 2%;
+    }
+
+    nav {
+        width: 30%;
+    }
+}
+
+/* Phone Responsive */
+@media screen and (max-width: 600px) {
     header {
         width: auto;
         margin: 5%;
     }
 
-    .headLogo {
-        width: 30%;
-    }
-    .logoWidth {
-        width: 145px;
-        height: 47px;
-    }
     nav {
         width: 50%;
         font-size: 12px;
-        margin-top: 5%;
+    }
+
+    .headLogo {
+        width: 30%;
+    }
+
+    .logoWidth {
+        width: 145px;
+        height: 47px;
     }
 }

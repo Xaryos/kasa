@@ -7,6 +7,7 @@ const ImageContainer = () => {
             <div className="mainImage">
             </div>
             <h1 className='TitleText'> Chez vous, partout et ailleurs</h1>
+
         </div>
 
     );

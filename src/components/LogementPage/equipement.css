@@ -20,7 +20,7 @@
 .underEquipementbox {
     width: 582px;
     height: 249px;
-    background-color: rgba(246,246,246,1);
+    background-color: rgba(246, 246, 246, 1);
     border-radius: 10px;
     display: flex;
     align-items: flex-start;
@@ -48,7 +48,7 @@
 
 
 @media (max-width: 480px) {
-    
+
     .globalEquipement {
         margin: 0 auto;
         margin-bottom: 5%;
@@ -66,6 +66,7 @@
     .responsiveSizeText {
         font-size: 12px;
     }
+
     .equipementbox {
         width: 335px;
         height: 29.93px;
@@ -78,9 +79,94 @@
         border-radius: 10px;
         background-color: #F7F7F7;
     }
-    
+
     .dd_contentEquip_close {
         height: 0;
         overflow: hidden;
+    }
+}
+
+
+/* low Screen Responsive */
+@media screen and (max-width: 1480px) {}
+
+/* Tablet Responsive */
+@media screen and (max-width: 810px) {
+    .headInfo {
+        margin: 0 3% 0 3%;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .underContainer {
+        margin-top: 2%;
+    }
+
+    .dd-Container {
+        width: 45%;
+        margin-left: 3%;
+    }
+
+    .dd-Header {
+        width: 100%;
+    }
+
+    .globalEquipement {
+        width: 45%;
+        margin-right: 3%;
+    }
+
+    .equipementbox {
+        width: 100%;
+    }
+
+    .dd_contentDd_open {
+        width: auto;
+    }
+
+    .dd_contentEquip_open {
+        width: auto;
+    }
+}
+
+/* Phone Responsive */
+@media screen and (max-width: 600px) {
+    .headInfo {
+        flex-direction: column;
+    }
+
+    .rightInfo {
+        flex-direction: row-reverse;
+    }
+
+    .bodyRight {
+        justify-content: flex-end;
+    }
+
+    .StarContainer {
+        align-self: flex-end;
+        margin-right: 8%;
+    }
+
+    .star {
+        width: 20px;
+        height: auto;
+    }
+
+    .underContainer {
+        flex-direction: column;
+    }
+
+    .dd-Container {
+        margin: 0 auto;
+        margin-bottom: 5%;
+        width: 95%;
+    }
+
+    .globalEquipement {
+        margin: 0 auto;
+        width: 95%;
     }
 }

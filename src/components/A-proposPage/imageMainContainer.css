@@ -6,24 +6,32 @@
 
 
 .backgroundImage {
-    width: 1240px;
+    width: 100%;
     height: 223px;
-    
+
     background-image: url('../../images/Apropos/AproposImage.png');
     border-radius: 25px;
     filter: brightness(70%);
 }
 
-@media (max-width: 480px) {
+/* low Screen Responsive */
+@media screen and (max-width: 1480px) {}
 
-    .mainBlock {
-        max-width: 370px;
-        margin: 0 auto;
-        margin-bottom: 2%;
+/* Tablet Responsive */
+@media screen and (max-width: 810px) {
+    .AproposContainer {
+        margin: 0 2% 0 2%;
     }
 
     .backgroundImage {
-        width: 370px;
-        height: 223px;
+        width: 100%;
+        background-image: url(../../images/Apropos/BackgroundResponsiveFont.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 10%;
+
     }
 }
+
+/* Phone Responsive */
+@media screen and (max-width: 600px) {}

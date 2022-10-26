@@ -6,7 +6,7 @@ import "./logement.css";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Carrousel from '../components/LogementPage/Carrousel';
-import Information  from '../components/LogementPage/Information';
+import Information from '../components/LogementPage/Information';
 import Dropdown from '../components/LogementPage/Dropdown';
 import Equipement from '../components/LogementPage/Equipement';
 
@@ -20,23 +20,23 @@ const Logement = () => {
     const appart = dataService.getOneAppart(id);
     console.log(appart)
 
-    if(!appart){
-        return <Error/>
-    }else{
+    if (!appart) {
+        return <Error />
+    } else {
 
         return (
             <div className='bodyHtml'>
                 <Header />
                 <div className='MainContainer'>
-                    
-                    <Carrousel images={appart.pictures}/>
 
-                    <Information  details={appart}/>
+                    <Carrousel images={appart.pictures} />
+
+                    <Information details={appart} />
 
                     <div className='underContainer'>
-                        <Dropdown descriptions={appart}/>
-                        <Equipement details={appart}/>
-                        
+                        <Dropdown descriptions={appart} />
+                        <Equipement details={appart} />
+
                     </div>
 
                 </div>

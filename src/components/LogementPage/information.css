@@ -88,51 +88,12 @@ h1 {
     align-self: flex-end;
 }
 
-@media (max-width: 480px) {
 
-    .headInfo {
-        flex-direction: column;
-        margin-left: 7%;
-    }
+/* low Screen Responsive */
+@media screen and (max-width: 1480px) {}
 
-    .leftInfo {
-        width: 100%;
-        justify-content: flex-start;
-    }
+/* Tablet Responsive */
+@media screen and (max-width: 810px) {}
 
-    .title {
-        font-size: 18px;
-    }
-
-    .spaceabove {
-        font-size: 14px;
-    }
-
-    .tags {
-        border-radius: 5px;
-    }
-
-    .rightInfo {
-        flex-direction: row-reverse;
-    }
-    .bodyRight {
-        margin-left: 15%;
-    }
-
-    .sizeH3 {
-        font-size: 12px;
-        width: 93px;
-        height: 33px;
-    }
-    .CircleImg {
-        width: 32px;
-        height: 32px;
-    }
-    .interiorpic {
-        width: 32px;
-        height: 32px;
-        align-self: flex-end;
-    }
-    /* .stars {
-    } */
-}
+/* Phone Responsive */
+@media screen and (max-width: 600px) {}

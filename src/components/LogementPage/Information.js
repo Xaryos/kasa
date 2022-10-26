@@ -8,10 +8,10 @@ import FullStar from '@/images/Logement/VectorFULL.png';
 const Information = ({ details }) => {
 
     const ratings = details.rating;
-    console.log('nmb rate : ' +details.rating );
+    console.log('nmb rate : ' + details.rating);
 
     let rate = [];
-    for (let i = 1; i <= 5 ; i++) {
+    for (let i = 1; i <= 5; i++) {
         if (i <= ratings) {
             rate[i] = true
         } else {
@@ -42,13 +42,13 @@ const Information = ({ details }) => {
                 </div>
                 <ul className='StarContainer'>
                     {
-                    rate.map((starRate, i)  => (
-                        <li className='stars' key={i}>
-                            <img src= {starRate ? FullStar : EmptyStar} alt={starRate ? 'Star full ' : 'Star empty'}></img>
-                        </li>
+                        rate.map((starRate, i) => (
+                            <li className='stars' key={i}>
+                                <img className="star" src={starRate ? FullStar : EmptyStar} alt={starRate ? 'Star full ' : 'Star empty'}></img>
+                            </li>
 
                         ))
-                }
+                    }
                 </ul>
             </div>
         </div>

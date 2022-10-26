@@ -7,9 +7,9 @@ const getAllApparts = () => {
 
 const getOneAppart = (id) => {
     return Apparts.find(log => log.id === id)
-    
+
 }
 
 export const dataService = {
-    getAllApparts, getOneAppart, 
+    getAllApparts, getOneAppart,
 }

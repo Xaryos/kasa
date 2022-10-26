@@ -1,4 +1,4 @@
-header{
+header {
     margin-bottom: 2%;
 }
 
@@ -14,9 +14,11 @@ header{
     margin-bottom: 2%;
 }
 
+/* low Screen Responsive */
+@media screen and (max-width: 1480px) {}
 
-@media (max-width: 480px) {
-    .underContainer {
-        flex-direction: column;
-    }   
-}
+/* Tablet Responsive */
+@media screen and (max-width: 810px) {}
+
+/* Phone Responsive */
+@media screen and (max-width: 600px) {}

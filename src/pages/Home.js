@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import "./home.css"
 import Header from '../components/Header';
 import ImageContainer from '../components/HomePage/ImageContainer';
@@ -26,14 +26,14 @@ const Home = () => {
 
             {/* Main container */}
             <div className='Gallery'>
-                    
-                    {
-                        logs.map(log => (
-                            <Thumb key={log.id} detail={log}/>
-                        ))
-                    }
+
+                {
+                    logs.map(log => (
+                        <Thumb key={log.id} detail={log} />
+                    ))
+                }
             </div>
-            <Footer/>
+            <Footer />
         </div>
     );
 };

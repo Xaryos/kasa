@@ -26,7 +26,7 @@
 
     position: absolute;
 
-    bottom: 170px;
+    top: 42%;
 
 }
 
@@ -38,8 +38,8 @@
     height: 79.2px;
 
     position: absolute;
-    left: 1194px;
-    bottom: 170px;
+    left: 96.2%;
+    top: 42%;
 
     cursor: pointer;
 }
@@ -57,23 +57,38 @@
 
 
 .photo {
-    width: 1240px;
+    width: 100%;
     height: 415px;
     object-fit: cover;
     border-radius: 25px;
 }
 
 
+/* low Screen Responsive */
+@media screen and (max-width: 1480px) {}
 
-@media (max-width: 480px) {
-
+/* Tablet Responsive */
+@media screen and (max-width: 810px) {
     .rollingBlock {
-        width: 335px;
-        margin: auto;
+        margin: 2%;
+    }
+
+    .leftArrow {
+        right: 92%;
+    }
+
+    .rightArrow {
+        left: 92%;
+    }
+}
+
+/* Phone Responsive */
+@media screen and (max-width: 600px) {
+    .rollingBlock {
+        margin: 5%;
     }
 
     .photo {
-        width: 335px;
         border-radius: 10px;
         object-fit: fill cover;
     }
@@ -96,5 +111,4 @@
         left: 90%;
         top: 50%;
     }
-
 }
